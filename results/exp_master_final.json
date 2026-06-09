@@ -1,0 +1,78 @@
+{
+  "13b_ksegment": {
+    "model": "Chinese-Llama-2-13b",
+    "n_params": 13.25441536,
+    "vram_gb": 26.508831744,
+    "baseline_ppl": 22.08938244003893,
+    "baseline_tokens": 480,
+    "ksegment_S": 4096,
+    "ksegment_n_poly": 2,
+    "ppl_mean": 22.066608822838642,
+    "ppl_std": 0.0,
+    "ppl_pct_change": -0.1030975730630046,
+    "cos_sim": 0.9999823570251465,
+    "top10_overlap": 10,
+    "ppl_runs": [
+      22.066608822838642,
+      22.066608822838642,
+      22.066608822838642
+    ]
+  },
+  "05b_ksegment": {
+    "model": "Qwen2.5-0.5B",
+    "n_params": 0.494032768,
+    "vram_gb": 0.997141504,
+    "baseline_ppl": 17.020076018973253,
+    "baseline_tokens": 405,
+    "ksegment_S": 4096,
+    "ksegment_n_poly": 2,
+    "ppl_mean": 17.040764466651943,
+    "ppl_std": 0.0,
+    "ppl_pct_change": 0.12155320373203882,
+    "cos_sim": 0.9998700022697449,
+    "top10_overlap": 10,
+    "ppl_runs": [
+      17.040764466651943,
+      17.040764466651943,
+      17.040764466651943
+    ]
+  },
+  "zk_protocol_benchmark": [
+    {
+      "N": 64,
+      "D": 4096,
+      "commit_time_s": 0.1728687286376953,
+      "horner_time_s": 0.027019023895263672,
+      "sumcheck_time_s": 0.012535810470581055,
+      "total_per_seg_s": 0.21242356300354004,
+      "extrapolated_total_s": 835283.4375
+    },
+    {
+      "N": 256,
+      "D": 65536,
+      "commit_time_s": 0.17187905311584473,
+      "horner_time_s": 0.44254231452941895,
+      "sumcheck_time_s": 0.20371246337890625,
+      "total_per_seg_s": 0.8181338310241699,
+      "extrapolated_total_s": 201064.5703125
+    },
+    {
+      "N": 1024,
+      "D": 1048576,
+      "commit_time_s": 0.17351794242858887,
+      "horner_time_s": 7.074774742126465,
+      "sumcheck_time_s": 3.221471071243286,
+      "total_per_seg_s": 10.46976375579834,
+      "extrapolated_total_s": 160815.5712890625
+    },
+    {
+      "N": 4096,
+      "D": 16777216,
+      "commit_time_s": 0.1702098846435547,
+      "horner_time_s": 114.28943943977356,
+      "sumcheck_time_s": 51.79989004135132,
+      "total_per_seg_s": 166.25953936576843,
+      "extrapolated_total_s": 159609.1577911377
+    }
+  ]
+}

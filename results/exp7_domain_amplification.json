@@ -1,0 +1,79 @@
+{
+  "experiment": "domain_amplification",
+  "model": "/root/autodl-tmp/chinese-llama-2-7b",
+  "degree": 9,
+  "baseline_ppl": 45.21869221702857,
+  "results": [
+    {
+      "domain": 8.0,
+      "linf_error": 1.7902375996969866e-05,
+      "ppl": 43.5376903667904,
+      "ppl_delta": -1.681001850238168,
+      "ppl_pct_change": -3.7174932927519166,
+      "cos_sim": 0.9942163825035095,
+      "logits_max_diff": 3.10546875,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 10.0,
+      "linf_error": 7.843089693460037e-05,
+      "ppl": 45.285766131096565,
+      "ppl_delta": 0.06707391406799701,
+      "ppl_pct_change": 0.1483322731804737,
+      "cos_sim": 0.9999642968177795,
+      "logits_max_diff": 0.1875,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 12.0,
+      "linf_error": 0.00023762214284328564,
+      "ppl": 45.29457954355972,
+      "ppl_delta": 0.07588732653115215,
+      "ppl_pct_change": 0.1678229130708253,
+      "cos_sim": 0.9999794363975525,
+      "logits_max_diff": 0.125,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 15.0,
+      "linf_error": 0.000811360683564244,
+      "ppl": 45.26065777933511,
+      "ppl_delta": 0.0419655623065438,
+      "ppl_pct_change": 0.0928057850614783,
+      "cos_sim": 0.9999778270721436,
+      "logits_max_diff": 0.125,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 18.0,
+      "linf_error": 0.0019859233983808844,
+      "ppl": 45.41774031517045,
+      "ppl_delta": 0.19904809814187985,
+      "ppl_pct_change": 0.4401898603934473,
+      "cos_sim": 0.9999665021896362,
+      "logits_max_diff": 0.1484375,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 20.0,
+      "linf_error": 0.0031865493076010942,
+      "ppl": 45.50490544680336,
+      "ppl_delta": 0.2862132297747948,
+      "ppl_pct_change": 0.6329533556634237,
+      "cos_sim": 0.9999531507492065,
+      "logits_max_diff": 0.169921875,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 25.0,
+      "linf_error": 0.007812950067345614,
+      "ppl": 45.02426989779938,
+      "ppl_delta": -0.19442231922919007,
+      "ppl_pct_change": -0.4299600667265091,
+      "cos_sim": 0.9998578429222107,
+      "logits_max_diff": 0.375,
+      "top10_overlap": 10
+    }
+  ],
+  "conclusion": "clip_dominant"
+}
