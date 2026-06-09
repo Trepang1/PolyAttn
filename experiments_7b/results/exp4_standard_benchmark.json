@@ -1,0 +1,55 @@
+{
+  "experiment": "standard_benchmark_v2",
+  "model": "/root/autodl-tmp/chinese-llama-2-7b",
+  "degree": 9,
+  "domain": 8.0,
+  "max_samples": 200,
+  "max_length": 256,
+  "patch_verified": true,
+  "verify_logits_max_diff": 3.10546875,
+  "verify_cos_sim": 0.9942163825035095,
+  "results": [
+    {
+      "benchmark": "WikiText-2 (fallback)",
+      "num_samples": 50,
+      "ppl_orig": 7.904169791196289,
+      "ppl_poly": 7.554676148635099,
+      "ppl_delta": -0.34949364256119075,
+      "ppl_pct_change": -4.421636323532152,
+      "loss_orig": 2.0673904418945312,
+      "loss_poly": 2.0221667289733887
+    },
+    {
+      "benchmark": "Chinese Benchmark",
+      "num_samples": 200,
+      "ppl_orig": 44.77539171678613,
+      "ppl_poly": 43.501596507353334,
+      "ppl_delta": -1.273795209432798,
+      "ppl_pct_change": -2.844855534687052,
+      "loss_orig": 3.801658696468778,
+      "loss_poly": 3.772797638739629
+    },
+    {
+      "benchmark": "Mixed Technical EN",
+      "num_samples": 200,
+      "ppl_orig": 23.399493882974568,
+      "ppl_poly": 21.238637630082817,
+      "ppl_delta": -2.160856252891751,
+      "ppl_pct_change": -9.234628166312541,
+      "loss_orig": 3.1527143931970363,
+      "loss_poly": 3.055822052606722
+    },
+    {
+      "benchmark": "Code-related EN",
+      "num_samples": 200,
+      "ppl_orig": 23.547968101937744,
+      "ppl_poly": 21.9712354850664,
+      "ppl_delta": -1.5767326168713431,
+      "ppl_pct_change": -6.69583299096449,
+      "loss_orig": 3.1590395365675836,
+      "loss_poly": 3.0897341199117165
+    }
+  ],
+  "zero_delta_benchmarks": [],
+  "avg_abs_pct_change": 5.799238253874059
+}

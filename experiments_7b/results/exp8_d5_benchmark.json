@@ -1,0 +1,53 @@
+{
+  "experiment": "d5_benchmark",
+  "model": "/root/autodl-tmp/chinese-llama-2-7b",
+  "degree": 5,
+  "baseline_ppl": 36.28047925027618,
+  "results": [
+    {
+      "domain": 8.0,
+      "linf_error": 0.007626033563479018,
+      "ppl": 36.34117405069407,
+      "ppl_delta": 0.06069480041789177,
+      "ppl_pct_change": 0.167293270850144,
+      "cos_sim": 0.9998955726623535,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 10.0,
+      "linf_error": 0.015470690836805301,
+      "ppl": 35.99902091298629,
+      "ppl_delta": -0.2814583372898909,
+      "ppl_pct_change": -0.775784507553734,
+      "cos_sim": 0.9992911219596863,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 12.0,
+      "linf_error": 0.02584148373959272,
+      "ppl": 36.695803217226306,
+      "ppl_delta": 0.4153239669501261,
+      "ppl_pct_change": 1.1447587670633252,
+      "cos_sim": 0.9981929659843445,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 15.0,
+      "linf_error": 0.04479051529323441,
+      "ppl": 44.877433472734076,
+      "ppl_delta": 8.596954222457896,
+      "ppl_pct_change": 23.695812183606833,
+      "cos_sim": 0.9944002628326416,
+      "top10_overlap": 10
+    },
+    {
+      "domain": 20.0,
+      "linf_error": 0.08088522046777036,
+      "ppl": 51.01709967739084,
+      "ppl_delta": 14.736620427114659,
+      "ppl_pct_change": 40.61859361188698,
+      "cos_sim": 0.9938642978668213,
+      "top10_overlap": 8
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "experiment": "zk_full_benchmark",
+  "protocol": "PolyEval",
+  "curve": "BLS12-381",
+  "implementation": "Python py_ecc (not CUDA)",
+  "parameters": {
+    "d": 9,
+    "domain_M": 255.0,
+    "lambda": 1.0
+  },
+  "model_params": {
+    "n_layers": 32,
+    "n_heads": 32,
+    "d_head": 128,
+    "seq_len": 2048,
+    "n_active_segments": 3
+  },
+  "per_phase_timings": [
+    {
+      "N": 16,
+      "setup_coeff_gen": 0.0007669925689697266,
+      "input_prep": 0.002878427505493164,
+      "prover_compute": 4.5299530029296875e-05,
+      "prover_commit": 1.6031513214111328,
+      "proof_size_bytes": 1056,
+      "verify_homomorphic": 1.3431315422058105,
+      "verify_sumcheck": 0.00028824806213378906,
+      "verify_opening": 0.3956446647644043,
+      "prover_total": 1.603196620941162,
+      "verifier_total": 1.7390644550323486,
+      "end_to_end_total": 3.3459064960479736
+    },
+    {
+      "N": 32,
+      "setup_coeff_gen": 0.0007834434509277344,
+      "input_prep": 4.267692565917969e-05,
+      "prover_compute": 6.699562072753906e-05,
+      "prover_commit": 2.9077694416046143,
+      "proof_size_bytes": 1056,
+      "verify_homomorphic": 2.5379793643951416,
+      "verify_sumcheck": 0.0006532669067382812,
+      "verify_opening": 0.6681818962097168,
+      "prover_total": 2.907836437225342,
+      "verifier_total": 3.2068145275115967,
+      "end_to_end_total": 6.115477085113525
+    },
+    {
+      "N": 64,
+      "setup_coeff_gen": 0.0008285045623779297,
+      "input_prep": 5.841255187988281e-05,
+      "prover_compute": 0.0001220703125,
+      "prover_commit": 5.563091039657593,
+      "proof_size_bytes": 1056,
+      "verify_homomorphic": 4.900986433029175,
+      "verify_sumcheck": 0.0014355182647705078,
+      "verify_opening": 1.2764348983764648,
+      "prover_total": 5.563213109970093,
+      "verifier_total": 6.17885684967041,
+      "end_to_end_total": 11.74295687675476
+    },
+    {
+      "N": 128,
+      "setup_coeff_gen": 0.0008454322814941406,
+      "input_prep": 8.821487426757812e-05,
+      "prover_compute": 0.00022530555725097656,
+      "prover_commit": 10.76065468788147,
+      "proof_size_bytes": 1056,
+      "verify_homomorphic": 9.689932107925415,
+      "verify_sumcheck": 0.003355264663696289,
+      "verify_opening": 2.3575775623321533,
+      "prover_total": 10.76087999343872,
+      "verifier_total": 12.050864934921265,
+      "end_to_end_total": 22.812678575515747
+    },
+    {
+      "N": 256,
+      "setup_coeff_gen": 0.0008473396301269531,
+      "input_prep": 0.00014138221740722656,
+      "prover_compute": 0.000438690185546875,
+      "prover_commit": 21.55400562286377,
+      "proof_size_bytes": 1056,
+      "verify_homomorphic": 19.30949330329895,
+      "verify_sumcheck": 0.007353067398071289,
+      "verify_opening": 4.78640604019165,
+      "prover_total": 21.554444313049316,
+      "verifier_total": 24.103252410888672,
+      "end_to_end_total": 45.65868544578552
+    }
+  ],
+  "theoretical_comparison": {
+    "tlookup_mul_per_elem": 115,
+    "polyeval_mul_per_elem": 72,
+    "speedup_per_segment": 1.5972222222222223,
+    "speedup_zkattn_overall": 11.1,
+    "total_elements": 12884901888
+  },
+  "proof_size_analysis": {
+    "per_segment_bytes": 16080,
+    "total_mb": 47.109375
+  },
+  "note": "Python prototype timings are 200-500x slower than CUDA. Use theoretical multiplication counting for speedup claims."
+}

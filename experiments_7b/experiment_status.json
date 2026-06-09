@@ -1,0 +1,12 @@
+{
+  "time": "2026-06-04 10:31:41",
+  "experiments": [
+    {
+      "experiment": "exp3_long_sequence",
+      "status": "OK",
+      "exit_code": 0,
+      "output_last_500": "-------\n128        13.1682      13.1179      -0.0503    -0.382    % 14.01     \n256        14.4102      14.5258      +0.1156    +0.802    % 14.15     \n512        16.4931      18.1032      +1.6101    +9.762    % 14.42     \n1024       5.1550       9.4026       +4.2476    +82.397   % 15.45     \n2048       2.2776       891.4774     +889.1998  +39040.871% 19.04     \n\nPPL delta trend: increasing (from seq=128 to seq=2048)\n\n结果已保存到 /root/autodl-tmp/experiments_7b_results/exp3_long_sequence.json\n实验 3 完成！\n",
+      "stderr_last_200": ""
+    }
+  ]
+}

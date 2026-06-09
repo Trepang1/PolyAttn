@@ -1,0 +1,78 @@
+{
+  "experiment": "long_sequence",
+  "model": "/root/autodl-tmp/chinese-llama-2-7b",
+  "degree": 9,
+  "domain": 8.0,
+  "results": [
+    {
+      "seq_len": 128,
+      "status": "OK",
+      "ppl_orig": 13.168218464528962,
+      "ppl_poly": 13.117918753347434,
+      "ppl_delta": -0.05029971118152865,
+      "ppl_pct_change": -0.38197810369732244,
+      "loss_orig": 2.577806234359741,
+      "loss_poly": 2.573979139328003,
+      "num_tokens": 128,
+      "time_orig_s": 0.3851313591003418,
+      "time_poly_s": 0.0596165657043457,
+      "peak_vram_gb": 14.008594944
+    },
+    {
+      "seq_len": 256,
+      "status": "OK",
+      "ppl_orig": 14.410210824418089,
+      "ppl_poly": 14.525842549960778,
+      "ppl_delta": 0.11563172554268952,
+      "ppl_pct_change": 0.8024291035822362,
+      "loss_orig": 2.6679370403289795,
+      "loss_poly": 2.675929307937622,
+      "num_tokens": 256,
+      "time_orig_s": 0.04620528221130371,
+      "time_poly_s": 0.0491337776184082,
+      "peak_vram_gb": 14.145960448
+    },
+    {
+      "seq_len": 512,
+      "status": "OK",
+      "ppl_orig": 16.493086982012983,
+      "ppl_poly": 18.103159017408274,
+      "ppl_delta": 1.6100720353952909,
+      "ppl_pct_change": 9.762102371443282,
+      "loss_orig": 2.80294132232666,
+      "loss_poly": 2.8960864543914795,
+      "num_tokens": 512,
+      "time_orig_s": 0.0645148754119873,
+      "time_poly_s": 0.08243799209594727,
+      "peak_vram_gb": 14.422788608
+    },
+    {
+      "seq_len": 1024,
+      "status": "OK",
+      "ppl_orig": 5.155009659503099,
+      "ppl_poly": 9.402607669507766,
+      "ppl_delta": 4.247598010004667,
+      "ppl_pct_change": 82.39747916232034,
+      "loss_orig": 1.639968991279602,
+      "loss_poly": 2.2409870624542236,
+      "num_tokens": 1024,
+      "time_orig_s": 0.1280965805053711,
+      "time_poly_s": 0.28130197525024414,
+      "peak_vram_gb": 15.4468608
+    },
+    {
+      "seq_len": 2048,
+      "status": "OK",
+      "ppl_orig": 2.2776125031480543,
+      "ppl_poly": 891.4773748955681,
+      "ppl_delta": 889.1997623924201,
+      "ppl_pct_change": 39040.87113867667,
+      "loss_orig": 0.8231277465820312,
+      "loss_poly": 6.792880058288574,
+      "num_tokens": 2048,
+      "time_orig_s": 0.2778482437133789,
+      "time_poly_s": 0.8952219486236572,
+      "peak_vram_gb": 19.044148224
+    }
+  ]
+}
